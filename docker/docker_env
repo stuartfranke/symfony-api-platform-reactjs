@@ -1,0 +1,18 @@
+# APP
+PHP_ARGUMENTS="-c /usr/local/etc/php/php.ini"
+PHP_IDE_CONFIG="serverName=localhost"
+DATABASE_URL=mysql://db_user:[reallyStrongRootPassword]@sapr-db:3306/saprdb?ServerVersion=8.0.20
+COMPOSER_ALLOW_SUPERUSER=1
+COMPOSER_PACKAGIST_REPO_URL="https://packagist.co.za"
+MAILER_DSN=smtp://[Username]:[Password]@smtp.mailtrap.io:2525/?encryption=ssl&auth_mode=login
+SYSTEM_NAME="Symfony API Platform ReactJS"
+FROM_ADDRESS=from@domain.tld
+CONTACT_MAIL_ADDRESS=contact@domain.tld
+# DATABASE
+MYSQL_HOST=sapr-db
+MYSQL_RANDOM_ROOT_PASSWORD=yes
+MYSQL_DATABASE=saprdb
+MYSQL_USER=db_user
+MYSQL_PASSWORD=[reallyStrongUserPassword]
+# IN-MEMORY DATABASE
+REDIS_DSN=redis://sapr-imdb
